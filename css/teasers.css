@@ -1,0 +1,68 @@
+.full-width > .teaser {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 20px;	
+}
+
+.teaser-row {
+	padding: 20px 0;
+}
+
+.teaser-content a {
+	display: block;
+	color: var(--primary);
+	font-weight: 400;
+	margin: 0 0 10px 0;
+}
+
+.highlight {
+	background: #f3f3f3;
+}
+
+.full-width {
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	left: 50%;
+}
+
+@media all and (min-width: 600px) {
+	.teaser-two-col,
+	.teaser-three-col {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+	.teaser-video,
+	.teaser-three-col h2,
+	.teaser-two-col h2,
+	.teaser-video h3 {
+		grid-column: span 2;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.teaser-three-col {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+	.teaser-three-col h2 {
+		grid-column: span 3;
+	}
+	.teaser-video {
+		grid-column: 1;
+	}
+	.teaser-three-col .teaser-two-col {
+		display: block;
+	}
+}
+
+@media all and (min-width: 1280px) {
+	.full-width {
+		width: 100vw;
+		position: relative;
+		margin-left: -50vw;
+		left: 50%;
+	}
+}

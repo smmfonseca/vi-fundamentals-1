@@ -1,0 +1,24 @@
+.documents {
+	padding: 20px 0;
+}
+
+.documents-list {
+	padding-left: 0;
+}
+
+.documents-list li {
+	border-top: 1px solid #bfbfbf;
+	padding: 10px 0;
+}
+
+.documents-list li:last-child {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.documents-list li a {
+	color: var(--primary);
+}
+
+.documents-list li p {
+	margin: 0;
+}
