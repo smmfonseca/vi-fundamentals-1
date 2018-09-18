@@ -1,0 +1,44 @@
+.img-text {
+  float: left;
+  width: 50%;
+  margin: 0 20px 20px 0;
+}
+
+.list-circle {
+  margin-bottom: 20px;
+  list-style-type: disc;
+}
+
+.content a {
+  display: block;
+  margin: 0 0 10px 0;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.video {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  color: #fff;
+  background: var(--primary);
+}
+
+th, tr, td {
+  padding: 5px 10px;
+  border: 1px solid #dcdcdc;
+}
+
+@media all and (min-width: 1024px) {
+  .content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 60% 40%);
+  }
+}
